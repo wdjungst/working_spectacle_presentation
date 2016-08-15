@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My App</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag *webpack_asset_paths('application') %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+</html>
